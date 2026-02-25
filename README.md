@@ -4,7 +4,7 @@ A single, self-contained HTML file that generates a valid 12-word BIP-39 recover
 
 Compatible with BTC, ETH, SOL and any wallet that uses the BIP-39 standard.
 
-**[Try it here](https://yourusername.github.io/bip39-generator)** — or download and run it offline (recommended).
+**[Try it here](https://github.io/simplesimon872/bip39-generator/)** — or download and run it offline (recommended).
 
 ---
 
@@ -42,25 +42,31 @@ Follows the [BIP-39 specification](https://github.com/trezor/python-mnemonic/blo
 
 The SHA-256 hash of the current release is:
 
+```
 SHA-256: EB49F7FF174FF34640F94A6045A81C4926E373D61A4B3EDE1A2D71976B9906F6
+```
 
 You can verify the file you downloaded or the hosted version matches this hash exactly.
 
 **Windows (PowerShell):**
+```powershell
 # verify a local file
 Get-FileHash index.html -Algorithm SHA256
 
 # or download and verify the hosted version
 Invoke-WebRequest https://github.io/simplesimon872/bip39-generator/ -OutFile index.html
 Get-FileHash index.html -Algorithm SHA256
+```
 
 **Mac / Linux:**
+```bash
 # verify a local file
 sha256sum index.html
 
 # or download and verify the hosted version
 curl -O https://github.io/simplesimon872/bip39-generator/
 sha256sum index.html
+```
 
 Compare the output to the hash above. If they match, the file is identical to the one published in this repo and has not been modified in transit or on the server.
 
@@ -70,7 +76,7 @@ The hash is also published in [`checksums.txt`](./checksums.txt) in this repo as
 
 ## Download and run offline (recommended)
 
-1. Download `index.html` from the [latest release](https://github.com/yourusername/bip39-generator/releases/latest)
+1. Download `index.html` from the [latest release](https://github.io/simplesimon872/bip39-generator/releases/latest)
 2. Verify the SHA-256 hash (see above)
 3. Move the file to an air-gapped machine or disconnect from the internet
 4. Open the file in any browser — it needs no internet connection to work
