@@ -4,7 +4,7 @@ A single, self-contained HTML file that generates a valid 12-word BIP-39 recover
 
 Compatible with BTC, ETH, SOL and any wallet that uses the BIP-39 standard.
 
-**[Try it here](https://github.io/simplesimon872/bip39-generator/)** — or download and run it offline (recommended).
+**[Try it here](https://simplesimon872.github.io/bip39generator/)** — or download and run it offline (recommended).
 
 ---
 
@@ -54,7 +54,7 @@ You can verify the file you downloaded or the hosted version matches this hash e
 Get-FileHash index.html -Algorithm SHA256
 
 # or download and verify the hosted version
-Invoke-WebRequest https://github.io/simplesimon872/bip39-generator/ -OutFile index.html
+Invoke-WebRequest https://simplesimon872.github.io/bip39generator/ -OutFile index.html
 Get-FileHash index.html -Algorithm SHA256
 ```
 
@@ -64,7 +64,7 @@ Get-FileHash index.html -Algorithm SHA256
 sha256sum index.html
 
 # or download and verify the hosted version
-curl -O https://github.io/simplesimon872/bip39-generator/
+curl -O https://simplesimon872.github.io/bip39generator/
 sha256sum index.html
 ```
 
@@ -76,7 +76,7 @@ The hash is also published in [`checksums.txt`](./checksums.txt) in this repo as
 
 ## Download and run offline (recommended)
 
-1. Download `index.html` from the [latest release](https://github.io/simplesimon872/bip39-generator/releases/latest)
+1. Download `index.html` from the [latest release](https://simplesimon872.github.io/bip39generator/releases/latest)
 2. Verify the SHA-256 hash (see above)
 3. Move the file to an air-gapped machine or disconnect from the internet
 4. Open the file in any browser — it needs no internet connection to work
