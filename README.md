@@ -97,7 +97,7 @@ The hash is also published in [`checksums.txt`](./checksums.txt) in this repo as
 
 ## Verifying the source yourself
 
-You don't need to trust this README. The entire tool is ~250 lines of readable HTML, CSS and JavaScript with no minification, no obfuscation and no external resources. Open `index.html` in a text editor and read it. Things to check:
+You don't need to trust this README. The entire tool is ~150 lines of readable HTML, CSS and JavaScript with no minification, no obfuscation and no external resources. Open `index.html` in a text editor and read it. Things to check:
 
 - Entropy comes only from `window.crypto.getRandomValues()` — search the file for `Math.random` and you should find nothing
 - There are no `fetch()`, `XMLHttpRequest`, `WebSocket` or `<script src="">` calls — the file loads nothing from the network
